@@ -1,0 +1,24 @@
+name: PluginList
+main: com.webkonsept.minecraft.pluginlist.PluginList
+version: 0.0.2
+website: http://minecraft.webkonsept.com/plugins/details/PluginsList.html
+location: http://minecraft.webkonsept.com/plugins/download/PluginsList.jar
+database: false
+commands:
+    pluginlist:
+        description:  Gets a list of plugins running on the server
+        usage: /<command>
+categories: [ SEC ]
+description: Emulates the CraftBukkit plugins list, but showing what plugins are active is configurable
+maintainer: DemmyDemon
+authors: [DemmyDemon]
+permissions:
+    pluginlist.reveal:
+        description: Allows the user to see the hidden plugins and indicates the fake ones
+        default: op
+    pluginlist.reload:
+        description: Treat "/pluginlist reload" as something special, reloading the config
+        default: op
+    pluginlist.detail:
+        description: Treat "/pluginlist detail" as something special, showing plugin versions
+        default: op
