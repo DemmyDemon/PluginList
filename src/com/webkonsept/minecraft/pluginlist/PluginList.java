@@ -97,9 +97,9 @@ public class PluginList extends KonseptPlugin {
                 }
                 if (showDetail){
                     sender.sendMessage(list.size()+" plugins:");
-                    Object[] CUNT = list.toArray();
-                    Arrays.sort(CUNT);
-                    for (Object pluginName : CUNT){
+                    Object[] pluginList = list.toArray();
+                    Arrays.sort(pluginList);
+                    for (Object pluginName : pluginList){
                         sender.sendMessage((String)pluginName);
                     }
                 }
